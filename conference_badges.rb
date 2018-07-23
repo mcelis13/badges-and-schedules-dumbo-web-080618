@@ -13,10 +13,10 @@ def assign_rooms(array)
   return room_assignment
 end
 
-#not getting this function and what it wants
 def printer(array)
-  array.each {|index| puts(assign_rooms([index]))}
+  array.each {|index| puts badge_maker(index)}
+  assign_rooms(array).each {|index| puts index}
 end
 
-#myArray =["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-#printer(myArray)
+myArray =["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+printer(myArray)
