@@ -17,6 +17,3 @@ def printer(array)
   array.each {|index| puts badge_maker(index)}
   assign_rooms(array).each {|index| puts index}
 end
-
-myArray =["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-printer(myArray)
